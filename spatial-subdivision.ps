@@ -1,0 +1,3569 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Change Log:
+%
+%	Aug 8, 1994  Dale Moore Carnegie Mellon University
+%	Changed some of the entries in papersize to work a bit better with
+%	the LPS-20's (and perhaps LPS-40's although they are now gone).
+%	The LPS-20 doesn't grok "letter", "11x17" or "ledger". 
+%	And "executive" is what puts the printer into interactive mode.
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray {letter} stopped pop} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray {11x17} stopped pop} def
+		/Ledger {ledgertray {ledger} stopped pop} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executivepage} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 16 FMDOCUMENT
+0 0 /NewCenturySchlbk-Bold FMFONTDEFINE
+1 0 /NewCenturySchlbk-Italic FMFONTDEFINE
+2 0 /NewCenturySchlbk-Roman FMFONTDEFINE
+3 0 /Palatino-Italic FMFONTDEFINE
+4 0 /Courier FMFONTDEFINE
+5 0 /Courier-Bold FMFONTDEFINE
+6 1 /Symbol FMFONTDEFINE
+7 0 /Palatino-Roman FMFONTDEFINE
+8 0 /Times-Roman FMFONTDEFINE
+9 0 /Times-Italic FMFONTDEFINE
+10 0 /Times-Bold FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+79.78 128.66 532.15 531 R
+7 X
+V
+0 24 Q
+0 X
+(Spatial Subdivision for) 162.19 515 T
+(Ray tracing) 232.74 491 T
+1 20 Q
+(Zoran Popovic) 236.52 357.67 T
+(\253) 362.74 357.67 T
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(2) 554.91 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Simple Ray T) 135.82 686 T
+(racing is Slow) 300.55 686 T
+2 18 Q
+(\245) 79.78 634 T
+3 F
+(each) 103.75 634 T
+2 F
+( ray is tested for intersection with) 135.07 634 T
+3 F
+(each) 421.76 634 T
+2 F
+( object) 453.08 634 T
+(\245) 79.78 601 T
+(with many rays in a complex scene this becomes) 103.75 601 T
+(computationally prohibitive) 103.75 580 T
+(\245) 79.78 547 T
+(possible ways to speed it up:) 103.75 547 T
+(\245) 103.75 514 T
+(fewer intersections by way of:) 133.78 514 T
+(\245) 133.78 487 T
+(space subdivision) 160.78 487 T
+(\245) 133.78 460 T
+(bounding volume hierarchy) 160.78 460 T
+(\245) 103.75 433 T
+(fewer rays) 133.78 433 T
+(\245) 103.75 406 T
+(generalized rays) 133.78 406 T
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(3) 554.91 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Subdividing Space) 189.41 686 T
+2 18 Q
+(\245) 79.78 634 T
+(Spatial subdivision is an ubiquitous problem in) 103.75 634 T
+(computer graphics: ray tracing, illumination,) 103.75 613 T
+-1.19 (hidden surface, collision detection, physically-based) 103.75 592 P
+(simulation) 103.75 571 T
+(\245) 79.78 538 T
+(Intersection between computational geometry and) 103.75 538 T
+(computer graphics) 103.75 517 T
+(\245) 79.78 484 T
+(Main idea: Subdivide space into more manageable) 103.75 484 T
+-0.13 (chunks so that operations we want to perform on it) 103.75 463 P
+(are fast\050er\051.) 103.75 442 T
+(\245) 79.78 409 T
+(T) 103.75 409 T
+(ype of queries dictate the chosen data structure) 114.82 409 T
+(and algorithms. Ray tracing query is: \336nd all) 103.75 388 T
+(objects that can possibly intersect with the ray) 103.75 367 T
+(.) 489.8 367 T
+(\245) 79.78 334 T
+(The space chunks are often referred to as voxels) 103.75 334 T
+(\050from \322volume elements\323\051.) 103.75 313 T
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(4) 554.91 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(General Space Subdivision) 138.19 686 T
+(Algorithm) 242.41 662 T
+4 14 Q
+(compute the voxel V containing ray.origin) 108 612.67 T
+5 18 Q
+(repeat) 108 583 T
+(for) 135 551 T
+4 14 Q
+( each object in voxel V) 167.4 551 T
+3 18 Q
+(intersect) 162 522 T
+4 14 Q
+(\050ray, object\051) 224.33 522 T
+5 18 Q
+(if) 135 493 T
+4 14 Q
+( there was no intersection) 156.6 493 T
+(set V to a next voxel along ray.direction) 162 466.67 T
+5 18 Q
+(until) 108 439 T
+4 14 Q
+( intersection is found or V is outside the) 162 439 T
+(voxel array) 135 420.67 T
+2 18 Q
+(\245) 79.78 389 T
+(Methods differ in how they implement two) 103.75 389 T
+(methods:) 103.75 368 T
+(\245) 103.75 335 T
+(\336nd voxel containing a point) 133.78 335 T
+(\245) 103.75 308 T
+(given a voxel and a ray \336nd next voxel pierced) 133.78 308 T
+(by a ray) 133.78 287 T
+(\245) 79.78 254 T
+(Algorithms can be roughly divided based on what) 103.75 254 T
+(data structures they use:) 103.75 233 T
+(\245) 133.78 200 T
+(uniform) 160.78 200 T
+(\245) 133.78 173 T
+(non-uniform) 160.78 173 T
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(5) 554.91 81.66 T
+79.78 103.66 532.15 724 R
+7 X
+V
+0 24 Q
+0 X
+(Uniform Spatial Subdivision) 127.98 708 T
+2 18 Q
+(\245) 79.78 656 T
+(3-D grid of identical voxels. Uniformity of voxels) 103.75 656 T
+(results in:) 103.75 635 T
+(\245) 133.78 602 T
+-0.06 (subdivision independent of the environment) 160.78 602 P
+(\050) 160.78 581 T
+0 F
+(bad) 166.77 581 T
+2 F
+(\051) 201.44 581 T
+(\245) 133.78 554 T
+-0.25 (voxels pierced by rays are easily accessed by) 160.78 554 P
+(incremental calculation \050) 160.78 533 T
+0 F
+(good) 368.12 533 T
+2 F
+(\051) 413.12 533 T
+(\245) 133.78 506 T
+(line rasterization in 3-D determines the) 160.78 506 T
+(voxels the ray goes through) 160.78 485 T
+79.78 103.66 532.15 724 C
+91.05 107 520.87 479 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+347.05 251 392.05 296 R
+3 X
+0 0 0 1 0 0 0 K
+V
+302.05 296 347.05 341 R
+V
+302.05 251 347.05 296 R
+V
+482.05 296 122.05 296 2 L
+0.5 H
+2 Z
+0 X
+N
+212.05 386 257.05 431 R
+3 X
+V
+212.05 341 257.05 386 R
+V
+167.05 386 212.05 431 R
+V
+257.05 341 302.05 386 R
+V
+167.05 431 212.05 476 R
+V
+122.05 431 167.05 476 R
+V
+257.05 296 302.05 341 R
+V
+347.05 206 392.05 251 R
+V
+392.05 206 437.05 251 R
+V
+437.05 161 482.05 206 R
+V
+392.05 161 437.05 206 R
+V
+122.05 116 482.05 476 R
+0 X
+N
+122.05 431 482.05 431 2 L
+N
+122.05 386 482.05 386 2 L
+N
+122.05 341 482.05 341 2 L
+N
+122.05 251 482.05 251 2 L
+N
+122.05 206 482.05 206 2 L
+N
+122.05 161 482.05 161 2 L
+N
+167.05 116 167.05 476 2 L
+N
+212.05 116 212.05 476 2 L
+N
+257.05 116 257.05 476 2 L
+N
+302.05 476 302.05 116 2 L
+N
+347.05 116 347.05 476 2 L
+N
+392.05 116 392.05 476 2 L
+N
+437.05 116 437.05 476 2 L
+N
+469.23 181.3 482.05 161.01 460.42 171.42 464.83 176.36 4 Y
+V
+149.05 458 464.84 176.36 2 L
+4 H
+N
+239.05 323 M
+ 230.81 344.85 211.76 378.32 183.5 351.35 D
+ 166.11 334.77 168.71 291.74 192.5 275.61 D
+ 225.56 253.19 272.38 244.95 308.5 258.96 D
+ 325.35 265.49 361.16 278.56 336.99 306 D
+ 313.39 332.79 271.45 310.08 239.5 323 D
+4 X
+V
+0.5 H
+0 X
+N
+4 X
+90 450 40.5 45 263.55 422 G
+0 X
+90 450 40.5 45 263.55 422 A
+347.05 368 446.05 449 18 RR
+6 X
+V
+1 H
+0 X
+N
+158.05 179 248.05 215 257.05 134 149.05 134 4 Y
+6 X
+V
+0 X
+N
+6 X
+90 450 22.5 58.5 441.55 345.5 G
+0 X
+90 450 22.5 58.5 441.55 345.5 A
+293.05 134 383.05 170 R
+6 X
+V
+0 X
+N
+6 X
+90 450 22.5 22.5 171.55 228.5 G
+0 X
+90 450 22.5 22.5 171.55 228.5 A
+90 450 9 9 149.05 458 G
+90 450 9 9 149.05 458 A
+302.05 388 267 341 328 356 3 Y
+4 X
+V
+0.5 H
+0 X
+N
+79.78 103.66 532.15 724 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(6) 554.91 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Uniform Subdivision Caveats) 123.1 686 T
+2 18 Q
+(\245) 79.78 634 T
+(voxels quickly take up all available memory) 103.75 634 T
+(, often) 466.52 634 T
+(with many empty voxels) 103.75 613 T
+(\245) 103.75 580 T
+(allocate only voxels that are full, and use voxel) 133.78 580 T
+(lookup-scheme similar to hashing) 133.78 559 T
+(\245) 79.78 526 T
+(dif\336cult to \336nd the optimal voxel size: small voxels) 103.75 526 T
+(result in too many voxels to traverse; large voxels) 103.75 505 T
+(leaves too many objects within a single voxel) 103.75 484 T
+(\245) 103.75 451 T
+(precompute a spatial distribution histogram) 133.78 451 T
+(\245) 79.78 418 T
+(same object can be tested for intersection in) 103.75 418 T
+(different voxels) 103.75 397 T
+(\245) 103.75 364 T
+(keep a \322mailbox\323 for each object where the) 133.78 364 T
+(unique id of each ray is stored) 133.78 343 T
+(\245) 79.78 310 T
+(ray intersects an object but not within the current) 103.75 310 T
+(cell \321 could result in an error) 103.75 289 T
+(\245) 103.75 256 T
+(accept only intersections that occur within the) 133.78 256 T
+(current voxel) 133.78 235 T
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(7) 554.91 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Non-uniform Spatial Subdivision) 100.21 686 T
+2 18 Q
+(\245) 79.78 634 T
+(Basic idea: need more voxels in the densely) 103.75 634 T
+(populated area and fewer in the relatively empty) 103.75 613 T
+(regions) 103.75 592 T
+(\245) 79.78 559 T
+(Computational geometry offers a number of) 103.75 559 T
+(possibilities: octrees, bsp trees, k-d trees) 103.75 538 T
+(\245) 79.78 505 T
+(Non-uniformity makes it much harder to:) 103.75 505 T
+(\245) 103.75 472 T
+(locate a voxel which contains a given point) 133.78 472 T
+(\245) 103.75 445 T
+(locate the next voxel that a ray pierces) 133.78 445 T
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(8) 554.91 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Octrees) 258.18 686 T
+2 18 Q
+(\245) 79.78 634 T
+(at each level of the hierarchy a voxel is subdivided) 103.75 634 T
+(into 8 smaller voxels) 103.75 613 T
+(\245) 79.78 580 T
+(subdivide a voxel if it contains more than a) 103.75 580 T
+(speci\336ed number of elements) 103.75 559 T
+(\245) 79.78 526 T
+(do not subdivide if: voxel fewer than some number) 103.75 526 T
+(of elements, or voxel is too small \050smaller than the) 103.75 505 T
+(threshold size\051) 103.75 484 T
+(\245) 79.78 451 T
+(to \336nd a voxel that contains a given point:) 103.75 451 T
+(\245) 103.75 418 T
+-0.58 (beginning at the root node determine the octant) 133.78 418 P
+(with the point and recurse) 133.78 397 T
+(\245) 103.75 370 T
+(stop when we reach the leaf node) 133.78 370 T
+(\245) 79.78 337 T
+(needs 8 pointers at each node. Alternative:) 103.75 337 T
+(\245) 103.75 304 T
+-1 (assign each voxel octary number id that encodes) 133.78 304 P
+(the path to it.) 133.78 283 T
+(\245) 103.75 256 T
+(to recurse construct the name of the child by) 133.78 256 T
+-0.63 (appending the octant digit and consult the hash) 133.78 235 P
+(to \336nd the child. Leaf is reached when) 133.78 214 T
+(constructed id is non-existent.) 133.78 193 T
+(\245) 103.75 166 T
+-0.81 (neighbor is found by searching for a point which) 133.78 166 P
+(is in the neighboring voxel) 133.78 145 T
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(9) 554.91 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Octrees) 258.18 686 T
+2 18 Q
+(\245) 79.78 254 T
+(Disadvantages:) 103.75 254 T
+(\245) 103.75 221 T
+(\336nding neighbors involves tree traversal each) 133.78 221 T
+(time) 133.78 200 T
+(\245) 103.75 173 T
+(performance degrades if objects are near the) 133.78 173 T
+(center of the subdivided space) 133.78 152 T
+79.78 128.66 532.15 702 C
+86.55 298 525.37 678 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+303.55 399 393.55 489 R
+3 X
+0 0 0 1 0 0 0 K
+V
+393.55 399 483.55 489 R
+V
+393.55 309 483.55 399 R
+V
+123.55 489 303.55 669 R
+V
+303.55 489 348.55 534 R
+V
+483.55 489 123.55 489 2 L
+0.5 H
+2 Z
+0 X
+N
+123.55 309 483.55 669 R
+N
+303.55 669 303.55 309 2 L
+N
+470.73 374.3 483.55 354.01 461.92 364.42 466.33 369.36 4 Y
+V
+150.55 651 466.34 369.36 2 L
+4 H
+N
+90 450 9 9 150.55 651 G
+1 H
+90 450 9 9 150.55 651 A
+393.55 669 393.55 309 2 L
+0.5 H
+N
+213.55 489 213.55 309 2 L
+N
+258.55 489 258.55 399 2 L
+N
+168.55 489 168.55 399 2 L
+N
+348.55 579 348.55 489 2 L
+N
+348.55 399 348.55 309 2 L
+N
+483.55 399 123.55 399 2 L
+N
+483.55 579 303.55 579 2 L
+N
+303.55 444 123.55 444 2 L
+N
+393.55 354 303.55 354 2 L
+N
+393.55 534 303.55 534 2 L
+N
+1 H
+90 450 18 22.5 447.55 610.5 A
+4 X
+90 450 49.5 31.5 281.05 601.5 G
+0 X
+90 450 49.5 31.5 281.05 601.5 A
+90 450 45 31.5 402.55 529.5 A
+90 450 22.5 13.5 164.05 457.5 A
+90 450 9 9 231.55 462 A
+90 450 22.5 31.5 155.05 349.5 A
+4 X
+90 450 27 45 294.55 372 G
+0 X
+90 450 27 45 294.55 372 A
+4 X
+90 450 22.5 18 389.05 363 G
+0 X
+90 450 22.5 18 389.05 363 A
+259 467 215 467 2 L
+0.5 H
+N
+238 489 238 443 2 L
+N
+79.78 128.66 532.15 702 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(10) 548.79 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(k-D trees \050Orthogonal BSP T) 98.04 686 T
+(rees\051) 452.54 686 T
+2 18 Q
+(\245) 79.78 634 T
+(same idea as octrees, only use binary trees instead) 103.75 634 T
+(\245) 79.78 601 T
+-0.23 (use planes to subdivide space: nodes in the tree are) 103.75 601 P
+(space separators not regions) 103.75 580 T
+(\245) 79.78 547 T
+(still need to traverse up the tree to \336nd neighbors) 103.75 547 T
+(\245) 79.78 514 T
+(recursive traversal offers an alternative:) 103.75 514 T
+(\245) 103.75 481 T
+(at each node intersect a ray with the plane and) 133.78 481 T
+(traverse down the \322closer\323 half-space) 133.78 460 T
+(\245) 103.75 433 T
+(recurse into the \322farther\323 half-space only if no) 133.78 433 T
+(intersection found in the \322closer\323 half-space) 133.78 412 T
+79.78 128.66 532.15 702 C
+110.46 140 501.46 406 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+182.46 253 245.46 397 R
+3 X
+0 0 0 1 0 0 0 K
+V
+245.46 253 308.46 397 R
+V
+308.46 154 380.46 298 R
+V
+380.46 154 434.46 298 R
+V
+182.46 154 434.46 397 R
+1 H
+2 Z
+0 X
+N
+308.46 397 308.46 154 2 L
+3 H
+N
+182.46 253 308.46 253 2 L
+N
+308.46 298 434.46 298 2 L
+N
+380.46 298 380.46 154 2 L
+N
+5 X
+90 450 13.5 36 402.96 235 G
+1 H
+0 X
+90 450 13.5 36 402.96 235 A
+191.46 325 227.46 370 R
+5 X
+V
+0 X
+N
+263.46 334 299.46 289 299.46 352 272.46 361 4 Y
+5 X
+V
+0 X
+N
+380.46 370 M
+ 380.48 386.43 409.64 388.07 416.76 374 D
+ 425.73 356.28 413.35 331.14 409 328.18 D
+ 397.65 320.44 388.08 331.3 385.03 344 D
+ 383.15 351.86 391.84 363.21 382 368 D
+N
+344.46 163 371.46 181 9 RR
+5 X
+V
+0 X
+N
+90 450 9 9 281.46 172 A
+245.46 397 245.46 253 2 L
+3 H
+N
+413.41 183.76 425.46 163.01 404.24 174.23 408.83 179 4 Y
+V
+191.46 388 408.83 178.99 2 L
+4 H
+N
+79.78 128.66 532.15 702 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "10" 10
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(1) 549.4 81.66 T
+(1) 554.91 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Bounding V) 189.19 686 T
+(olumes) 334.3 686 T
+2 18 Q
+(\245) 79.78 634 T
+(simple primitives that contain the object and can) 103.75 634 T
+(quickly intersect with a ray:) 103.75 613 T
+(\245) 103.75 580 T
+(spheres) 133.78 580 T
+(\245) 103.75 553 T
+(axis aligned boxes) 133.78 553 T
+(\245) 103.75 526 T
+(boxes) 133.78 526 T
+(\245) 103.75 499 T
+(CSGs) 133.78 499 T
+(\245) 103.75 472 T
+(intersection of half spaces) 133.78 472 T
+(\245) 79.78 439 T
+(necessary but not suf\336cient condition for) 103.75 439 T
+(intersection) 103.75 418 T
+(\245) 79.78 385 T
+(actually increase the intersection time, but the) 103.75 385 T
+(hope is that many will fail) 103.75 364 T
+(\245) 79.78 331 T
+(simple list of bounding volumes would decrease) 103.75 331 T
+(intersection time only by a constant) 103.75 310 T
+FMENDPAGE
+%%EndPage: "11" 11
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(12) 548.79 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Hierarchical Bounding V) 106.63 686 T
+(olumes) 416.86 686 T
+2 18 Q
+(\245) 79.78 634 T
+(each bounding volume contains a set of smaller) 103.75 634 T
+(bounding volumes \050list -> tree\051) 103.75 613 T
+(\245) 79.78 580 T
+(tree is constructed bottom up from primitives) 103.75 580 T
+(rather than top down as in spatial subdivision) 103.75 559 T
+3 F
+(intersect_bvh) 108 526 T
+4 14 Q
+(\050ray, node\051) 205.67 526 T
+({) 108 499.67 T
+5 18 Q
+(if) 135 472 T
+4 14 Q
+( node is a leaf) 156.6 472 T
+3 18 Q
+(intersect) 162 443 T
+4 14 Q
+(\050ray, node.object\051) 224.33 443 T
+5 18 Q
+(else if) 135 414 T
+3 F
+(intersect_bv) 219 414 T
+4 14 Q
+(\050ray, node.bv\051) 307.67 414 T
+5 18 Q
+(for) 162 385 T
+4 14 Q
+(each child of node) 205.2 385 T
+3 18 Q
+(intersect_bvh) 189 356 T
+4 14 Q
+(\050ray, child\051) 286.67 356 T
+(}) 108 329.67 T
+2 18 Q
+(\245) 79.78 298 T
+-0.38 (distance interval clipping further prunes the search) 103.75 298 P
+79.78 128.66 532.15 702 C
+130.49 136 481.44 292 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+166.49 262 M
+ 177.56 278.48 263.53 285.59 265.49 262 D
+ 268.65 224 228.96 250.17 238.49 226 D
+ 248.76 199.94 250.35 191.48 229.49 190 D
+ 203.77 188.17 180.07 207.57 175.49 235 D
+ 173.99 244 166 252 166 261 D
+5 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+2 Z
+0 X
+N
+256.14 198.27 M
+ 247.49 227.18 277.76 249.68 303.65 233.75 D
+ 331.72 216.48 380.11 196.93 352.79 156.27 D
+ 345.22 145 305.71 146.15 279.65 162.59 D
+ 267.05 170.54 248.17 184.03 255.65 204.27 D
+5 X
+V
+0 X
+N
+166.49 190 274.49 280 R
+N
+256.49 145 364.49 244 R
+N
+426.22 169.23 436.48 163 424.48 162.85 425.35 166.04 4 Y
+V
+139.49 244 425.36 166.03 2 L
+N
+90 450 4.5 4.5 165.99 236.5 G
+90 450 4.5 4.5 174.99 233.5 G
+90 450 4.5 4.5 256.99 212.5 G
+90 450 4.5 4.5 138.99 243.5 G
+79.78 128.66 532.15 702 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "12" 12
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(13) 548.79 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Effectiveness of a Bounding V) 82.64 686 T
+(olume) 452.84 686 T
+2 18 Q
+(\245) 79.78 634 T
+(Effectiveness depends on:) 103.75 634 T
+(\245) 103.75 601 T
+(the external cost of intersecting with the) 133.78 601 T
+(bounding volume \321 EC\050V\051) 133.78 580 T
+(\245) 103.75 553 T
+(and the internal cost of intersecting with an) 133.78 553 T
+(object \321 IC\050V\051) 133.78 532 T
+(\245) 79.78 499 T
+(metric of effectiveness is) 103.75 499 T
+0 F
+(projected void area) 312.41 499 T
+2 F
+(\245) 103.75 466 T
+-1.03 (difference in the projected areas of the bounding) 133.78 466 P
+(volume and the enclosed object) 133.78 445 T
+(\245) 103.75 418 T
+(for a convex body) 133.78 418 T
+0 F
+(average) 282.11 418 T
+2 F
+( projected void area) 356.11 418 T
+(is a quarter of its surface area) 133.78 397 T
+(\245) 79.78 364 T
+(Cost\050V\051 = n EC\050V\051 + m IC\050V\051) 103.75 364 T
+(\245) 79.78 331 T
+(we can reduce EC\050V\051 and m) 103.75 331 T
+FMENDPAGE
+%%EndPage: "13" 13
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(14) 548.79 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Effectiveness of a Hierarchy) 129.64 686 T
+2 18 Q
+(\245) 79.78 634 T
+(determine when it is feasible to create a parent) 103.75 634 T
+(bounding volume) 103.75 613 T
+(\245) 79.78 580 T
+-0.37 (examine how the child bounding volume affects the) 103.75 580 P
+(parent) 103.75 559 T
+(\245) 79.78 304 T
+(Pr\050 ray hits B | ray hits A\051 = S\050B\051 / S\050A\051) 103.75 304 T
+(\245) 79.78 258.09 T
+(\245) 79.78 204.42 T
+(assumptions: proper nesting, convexity) 103.75 204.42 T
+(,) 426.76 204.42 T
+(randomness of rays, occlusion, EC is constant) 103.75 183.42 T
+79.78 128.66 532.15 702 C
+134.96 331 476.96 553 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+6 X
+0 0 0 1 0 0 0 K
+90 450 105 103.5 301 444.5 G
+1 H
+2 Z
+0 X
+90 450 105 103.5 301 444.5 A
+250 421 281 502 R
+4 X
+V
+0 X
+N
+258 356 336 403 R
+4 X
+V
+0 X
+N
+322.78 469.22 308.06 460.72 366.94 494.72 383.94 465.28 325.06 431.28 17 RRR
+4 X
+V
+0 X
+N
+2 18 Q
+(B) 256.5 460.5 T
+6 14.4 Q
+(1) 269.5 456 T
+2 18 Q
+(B) 336.5 460.5 T
+6 14.4 Q
+(2) 349.5 456 T
+2 18 Q
+(B) 288.5 376.5 T
+6 14.4 Q
+(3) 301.5 372 T
+2 18 Q
+(A) 298.5 514.5 T
+238.46 481.31 250 478 238.46 474.69 238.46 478 4 Y
+V
+147 478 238.46 478 2 L
+N
+237.46 448.31 249 445 237.46 441.69 237.46 445 4 Y
+V
+146 445 237.46 445 2 L
+N
+426.46 414.31 438 411 426.46 407.69 426.46 411 4 Y
+V
+150 411 426.46 411 2 L
+N
+246.46 382.31 258 379 246.46 375.69 246.46 379 4 Y
+V
+147 379 246.46 379 2 L
+N
+79.78 128.66 532.15 702 C
+0 0 612 792 C
+103.75 231.42 423.82 283 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 18 Q
+0 X
+0 0 0 1 0 0 0 K
+(I) 104.75 258.09 T
+(C) 111.81 258.09 T
+(A) 135.6 258.09 T
+6 F
+(\050) 127.88 258.09 T
+(\051) 149.42 258.09 T
+3 F
+(E) 221.9 258.09 T
+(C) 233.96 258.09 T
+(B) 257.76 258.09 T
+(i) 269.82 258.09 T
+6 F
+(\050) 250.04 258.09 T
+(\051) 275.65 258.09 T
+3 F
+(S) 304.15 268.5 T
+(B) 325.95 268.5 T
+(i) 338.01 268.5 T
+6 F
+(\050) 318.23 268.5 T
+(\051) 343.84 268.5 T
+3 F
+(S) 306.19 246.45 T
+(A) 327.98 246.45 T
+6 F
+(\050) 320.26 246.45 T
+(\051) 341.8 246.45 T
+7 F
+(-) 304.15 258.1 T
+(-) 307.15 258.1 T
+(-) 310.15 258.1 T
+(-) 313.14 258.1 T
+(-) 316.14 258.1 T
+(-) 319.14 258.1 T
+(-) 322.14 258.1 T
+(-) 325.13 258.1 T
+(-) 328.13 258.1 T
+(-) 331.13 258.1 T
+(-) 334.12 258.1 T
+(-) 337.12 258.1 T
+(-) 340.12 258.1 T
+(-) 343.11 258.1 T
+(-) 346.11 258.1 T
+(-) 346.84 258.1 T
+3 F
+(I) 354.26 258.09 T
+(C) 361.31 258.09 T
+(B) 385.11 258.09 T
+(i) 397.17 258.09 T
+6 F
+(\050) 377.39 258.09 T
+(\051) 403 258.09 T
+8 F
+(+) 289.14 258.09 T
+6 F
+(\350) 211.18 251.05 T
+(\370) 412.82 251.05 T
+(\346) 211.18 266.48 T
+(\366) 412.82 266.48 T
+3 14 Q
+(i) 196.03 235.92 T
+6 32 Q
+(\345) 186.56 251.67 T
+8 18 Q
+(=) 167.42 258.09 T
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "14" 14
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(15) 548.79 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Choosing the Right Hierarchy) 118.54 686 T
+2 18 Q
+(\245) 79.78 634 T
+(construction tree) 103.75 634 T
+(\245) 103.75 601 T
+(large branching factors) 133.78 601 T
+(\245) 79.78 568 T
+(interactive tree construction) 103.75 568 T
+(\245) 103.75 535 T
+(we\325re lazy) 133.78 535 T
+(\245) 79.78 502 T
+(incremental insertion) 103.75 502 T
+(\245) 103.75 469 T
+(start and the root and select a subtree which) 133.78 469 T
+(incurs the smallest increase in surface area if) 133.78 448 T
+(the new object were to become the child of it) 133.78 427 T
+(\245) 103.75 400 T
+-0.33 (continue until the leaf is reached and insert the) 133.78 400 P
+(object) 133.78 379 T
+(\245) 103.75 352 T
+(order of insertion is crucial) 133.78 352 T
+(\245) 133.78 325 T
+(sorting along a line produces poor results) 160.78 325 T
+(\245) 133.78 298 T
+(random shuf\337ing is best) 160.78 298 T
+FMENDPAGE
+%%EndPage: "15" 15
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+49.97 99 561.96 738 18 RR
+7 X
+0 0 0 1 0 0 0 K
+V
+0.5 H
+0 Z
+0 X
+N
+54 70.99 562.03 88.99 R
+7 X
+V
+2 11 Q
+0 X
+(March 16, 1995) 54 81.66 T
+(Spatial Subdivision for Ray T) 236.4 81.66 T
+(racing) 385.68 81.66 T
+(16) 548.79 81.66 T
+79.78 128.66 532.15 702 R
+7 X
+V
+0 24 Q
+0 X
+(Approximate Convex Hulls) 138.19 686 T
+2 18 Q
+(\245) 79.78 634 T
+(construct bounding volumes with a collection of) 103.75 634 T
+(slabs that form a convex hull) 103.75 613 T
+(\245) 79.78 580 T
+(a slab) 103.75 580 T
+(is a set of two parallel planes de\336ned by a) 157.79 580 T
+(plane-set normal) 103.75 559 T
+9 F
+(N) 249.77 559 T
+2 F
+( and an interval \050) 261.77 559 T
+9 F
+(min) 406.13 559 T
+2 F
+(,) 433.13 559 T
+9 F
+(max) 443.14 559 T
+2 F
+(\051) 473.13 559 T
+(\245) 79.78 439 T
+(ray intersect algorithm:) 103.75 439 T
+(\245) 103.75 406 T
+(compute intervals where ray intersects the) 133.78 406 T
+(planes) 133.78 385 T
+(\245) 103.75 358 T
+(if intersection of those intervals is empty -> no) 133.78 358 T
+(intersection) 133.78 337 T
+(\245) 79.78 304 T
+(rotation affects performance \050) 103.75 304 T
+0 F
+(bad) 350.06 304 T
+2 F
+(\051) 384.73 304 T
+(\245) 79.78 271 T
+(common subexpressions for each plane set \050) 103.75 271 T
+0 F
+(good) 466.09 271 T
+2 F
+(\051) 511.09 271 T
+(\245) 79.78 238 T
+(to create a parent bounding hull, \336nd) 103.75 238 T
+9 F
+(min) 419.45 238 T
+2 F
+( and) 446.45 238 T
+9 F
+(max) 487.8 238 T
+2 F
+-0.14 (of the slab intervals of the corresponding plane-sets) 103.75 217 P
+(\245) 79.78 184 T
+(distance interval pruning is particularly effective) 103.75 184 T
+-0.59 (since objects can be sorted for each ray with respect) 103.75 163 P
+(to the \336rst plane intersection) 103.75 142 T
+79.78 128.66 532.15 702 C
+125.46 466 486.46 553 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+375.5 504.19 M
+ 371.49 520.55 405.58 537.23 414.5 522.28 D
+ 424.82 504.98 434.21 492.39 426.5 485.59 D
+ 407.65 468.95 375.17 475.56 375.5 504.19 D
+3 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+410.5 470 319.5 508 2 L
+0.5 H
+N
+444.5 512 353.5 550 2 L
+N
+J
+370 551.5 332 460.5 2 L
+J
+370 551.5 368.55 548.04 2 L
+N
+[7.551 6.544] 7.551 I
+368.55 548.04 333.44 463.97 2 L
+N
+J
+333.44 463.97 332 460.5 2 L
+N
+J
+9 18 Q
+(max) 326.5 536 T
+(min) 308.5 488 T
+90 450 4.5 4 346 497 G
+90 450 4.5 4 366 544 G
+273 532.38 280.5 541.75 279.11 529.83 276.05 531.11 4 Y
+V
+276.05 531.11 261.5 496.25 2 L
+N
+2 F
+(plane-set) 186 512 T
+(normal) 186 494 T
+90 450 4.5 4 261 497 G
+79.78 128.66 532.15 702 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "16" 16
+%%Page: "17" 17
+612 792 1 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+36 261 756 720 R
+7 X
+0 0 0 1 0 0 0 K
+V
+0 24 Q
+0 X
+(T) 336.96 704 T
+(radeoffs) 352.8 704 T
+2 18 Q
+(Method) 44.84 600 T
+(Disadvantages) 240.67 600 T
+(Advantages) 572.68 600 T
+8 F
+(Grid) 42 570 T
+(poor on non-uniform object distribution,) 123 570 T
+(a memory hog) 123 548 T
+(fast neighbor) 493.38 570 T
+(-\336nding,) 587.5 570 T
+(simple to implement) 493.38 548 T
+(Octree) 42 498 T
+(hard to implement,) 123 498 T
+(neighbor) 123 476 T
+(-\336nding) 186.63 476 T
+(requires tree-traversal) 123 454 T
+(sensitive to object) 294 520 T
+(arrangement,) 294 498 T
+(lar) 294 476 T
+(ge branching factor \0508\051) 312.67 476 T
+(fast tree construction) 493.38 498 T
+(k-D tree,) 42 448 T
+(BSP tree) 42 426 T
+(constructing a) 294 448 T
+10 F
+(balanced) 399.98 448 T
+8 F
+(tree is hard) 294 426 T
+(on average faster than Octrees,) 493.38 448 T
+(recursive traversal is possible) 493.38 426 T
+(Hier) 42 398 T
+(. BV) 73 398 T
+(hard to \336nd) 123 398 T
+10 F
+(tight) 210.5 398 T
+8 F
+(BVs and) 251 398 T
+10 F
+(optimal) 317.99 398 T
+8 F
+( hierarchy) 377 398 T
+(,) 448.3 398 T
+(extra BV check for each object) 123 376 T
+(simple to implement in most cases,) 493.38 398 T
+(independent of spatial distribution) 493.38 376 T
+36 619.75 36 366.25 2 L
+V
+0.5 H
+0 Z
+N
+115.75 619.75 115.75 366.25 2 L
+V
+N
+118.25 619.75 118.25 366.25 2 L
+V
+N
+288 538.25 288 415.75 2 L
+V
+N
+487.38 620.25 487.38 365.75 2 L
+V
+N
+756 619.75 756 366.25 2 L
+V
+N
+35.75 620 756.25 620 2 L
+V
+N
+36.25 589.25 755.75 589.25 2 L
+V
+N
+36.25 586.75 755.75 586.75 2 L
+V
+N
+35.75 538 756.25 538 2 L
+V
+N
+35.75 466 115.5 466 2 L
+V
+N
+287.75 466 756.25 466 2 L
+V
+N
+35.75 416 756.25 416 2 L
+V
+N
+35.75 366 756.25 366 2 L
+V
+N
+FMENDPAGE
+%%EndPage: "17" 17
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 17
+%%DocumentFonts: NewCenturySchlbk-Bold
+%%+ NewCenturySchlbk-Italic
+%%+ NewCenturySchlbk-Roman
+%%+ Palatino-Italic
+%%+ Courier
+%%+ Courier-Bold
+%%+ Symbol
+%%+ Palatino-Roman
+%%+ Times-Roman
+%%+ Times-Italic
+%%+ Times-Bold
+%%EOF

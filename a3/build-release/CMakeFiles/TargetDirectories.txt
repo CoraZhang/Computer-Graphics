@@ -1,0 +1,4 @@
+/Users/apple/Desktop/2020winter/csc418/a3/build-release/CMakeFiles/rebuild_cache.dir
+/Users/apple/Desktop/2020winter/csc418/a3/build-release/CMakeFiles/edit_cache.dir
+/Users/apple/Desktop/2020winter/csc418/a3/build-release/CMakeFiles/hw2.dir
+/Users/apple/Desktop/2020winter/csc418/a3/build-release/CMakeFiles/raytracing.dir
